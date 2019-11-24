@@ -22,7 +22,7 @@ body {
   margin: 0 auto;
 }
 
-.description-item{
+.description-item {
   &__icon {
     margin-bottom: 20px;
   }
@@ -164,7 +164,7 @@ body {
       margin-bottom: 57px;
     }
 
-    .description-item{
+    .description-item {
       margin-top: 29px;
     }
   }
@@ -185,5 +185,38 @@ body {
 
   .description-item + .description-item {
     margin-left: 37px;
+  }
+}
+
+.section-founder {
+  background-color: #f6fafd;
+padding-top: 34px;
+
+  .section-inner {
+    display: flex;
+  }
+
+  &__img {
+    align-self: flex-end;
+  }
+  &__content {
+    align-self: center;
+    padding-left: 50px;
+    &-text {
+      @include font-montserrat;
+
+      font-size: 24px;
+      line-height: 40px;
+    }
+    &-name {
+      font-size: 24px;
+      line-height: 29px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    &-post {
+      font-size: 20px;
+      line-height: 29px;
+    }
   }
 }
