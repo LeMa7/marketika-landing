@@ -362,6 +362,10 @@ body {
   border: 1px solid #979797;
   color: #414141;
   background: #ffffff; }
+  .btn-secondary:hover {
+    background: linear-gradient(to right, #fe985b, #fe4fa7);
+    border: 1px solid #ffffff;
+    color: #ffffff; }
 
 .btn-free {
   font-family: "Montserrat", sans-serif;
@@ -378,6 +382,8 @@ body {
   border: none;
   color: #414141;
   background: #ffffff; }
+  .btn-free:hover {
+    color: #fe4fa7; }
 
 .section-header {
   color: #ffffff;
@@ -439,7 +445,7 @@ body {
           outline: none;
           border-radius: 4px;
           width: 100%;
-          transition: .2s; }
+          transition: 0.2s; }
           .section-header-wrapper__form-input input::placeholder {
             color: #ffffff; }
           .section-header-wrapper__form-input input:focus {
@@ -584,8 +590,9 @@ body {
       font-weight: bold;
       text-transform: uppercase;
       color: #464646;
-      text-decoration: none; }
-      .section-footer__nav li a.active {
+      text-decoration: none;
+      transition: 0.2; }
+      .section-footer__nav li a:hover {
         color: #fe50a6; }
   .section-footer__copyright_and_links {
     font-family: "Montserrat", sans-serif;
@@ -604,3 +611,5 @@ body {
   .helper-link li a {
     color: #464646;
     text-decoration: none; }
+    .helper-link li a:hover {
+      text-decoration: underline; }
